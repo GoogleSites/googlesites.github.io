@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: Util.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,33 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: Util.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>class Util {
+	constructor() {
+		throw 'This class cannot be instantiated.';
+	}
 
+	/**
+	 * Returns a promise that resolves after a certain number of milliseconds.
+	 * @param {number} ms Number of milliseconds to sleep.
+	 * @returns {Promise&lt;true>} The promise.
+	 */
+	static sleep(ms) {
+		return new Promise(r => setTimeout(r, ms, true));
+	}
+}
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = Util;</code></pre>
+        </article>
+    </section>
 
 
 
